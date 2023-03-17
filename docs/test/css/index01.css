@@ -1,0 +1,542 @@
+
+body,head,title {
+     color: black;
+    font-family: 'Noto Serif JP', serif;} 
+a { 
+    text-decoration: none;
+    color: black; }
+p { 
+    font-size: 1.3rem;}
+.p_less {display: none;}
+img {max-width: 100%;
+     margin: 0%;}
+li { list-style: none;}
+
+main {
+ width: 100%;
+ height: auto;
+ display: flex;
+ flex-direction: column;
+}
+/* ヘッダー */
+
+#header { 
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 2% 0%;
+    margin: 0%;
+    vertical-align: baseline; 
+} 
+ 
+#header > h1 {
+    width: 20.83vw;
+}
+
+#header ul{
+display: flex;
+align-items: center;
+}
+
+#header ul li {
+    font-size: 1.5rem;
+    font-family: 'Sawarabi Mincho', serif;
+    margin-left: 3vw;
+}
+
+.headerimg {
+    padding: 0VW;
+    background-color: #E2E2E2;
+}
+.headerimg_sp {
+    display: none;
+}
+
+/* ご案内 */
+#aboutus {
+
+    width: 100%;
+    height: 112vw;
+    background-color: #E2E2E2;
+    align-items: center;
+    padding: 3vw 0vw 2vw;
+    margin-bottom: 83vw;
+}
+
+#aboutus > h1{
+   font-weight: bold;
+   font-size: 2.2rem;
+   text-align: center;
+   background-color: #E2E2E2;
+   margin-bottom: 2vw;
+}
+
+#aboutus .maintxt {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Sawarabi Mincho', serif; 
+    padding-bottom: 3.5vw;
+}
+
+ .menu01,.menu02,.menu03 {
+    width: 100%;
+    height: 29.69vw;
+    padding: 0vw 4.17vw;
+    display: flex;
+ 
+ } 
+
+ 
+    .wrap-reverse {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+
+.menu_img img {
+    width: 36.46vw;
+    height: 29.69vw;
+    margin: 0vw 2.8vw;
+}
+
+.menu_t {
+    width: 44vw;
+    margin:auto;
+    padding: 0vw;
+  }
+
+
+article {
+    width: 100%;
+    height: 29.69vw;
+    margin: 10vw 0vw;
+    text-align: center;
+
+}
+
+.intotxt h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 5vw;
+}
+
+.intotxt {
+    text-align: left;
+    width: 36vw;
+    margin:auto;
+}
+
+.introduce {
+    width: 100%;
+    height: 29.69vw;
+    padding: 0vw 4.17vw;
+    display: flex;
+}
+
+.instabox {
+    width: 100%;
+display: flex;
+justify-content: center;
+margin: 8vw 0;
+}
+
+aside {
+    background-color: #E2E2E2;
+    margin: 6vw 0vw;
+    padding: 6vw;
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70%;
+}
+
+.insta_img img {
+    justify-content: center;
+    margin-left: 5vw;
+    width: 60%;
+}
+
+.checkit {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    align-items: center; 
+}
+
+.checkit h3 {
+    text-align: left;
+    font-size: 2.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: darkorchid;
+}
+
+.checkit p {
+    text-align: left;
+    font-size: 1.7rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkslategray;
+}
+
+
+/* ご利用方法 */
+
+#howtouse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    background-color: #E2E2E2;
+    padding: 0 10vw 3vw;
+}
+
+
+#howtouse > h1{
+    font-weight: bold;
+    font-size: 2.2rem;
+    text-align: center;
+    background-color: #E2E2E2;
+    margin: 2vw 0;
+ }
+
+ #howtouse  > h2   {
+    display: flex;
+    text-align: left;
+    width: 100%;
+}
+
+
+#howtouse h2 p  {
+    width: 60%;
+    display: flex;
+    text-align: left;
+}
+
+#howtouse table {
+    width: 100%;
+    height: 10vw;
+    background-color: antiquewhite;
+    border-collapse:  collapse;
+    margin: 1vw 0 2vw;
+    font-size: 1.3rem;
+    
+}
+#howtouse th,td {
+    border: solid 1px;
+    padding: 0 2vw;
+}
+
+#howtouse p  {
+    display: flex;
+    text-align: left;
+    font-size: 1.2rem;
+    margin-bottom: 2vw;
+}
+
+.sp_br {
+    display: none;
+}
+
+/* お問い合わせ */
+
+#contact {
+    display: block;
+    flex-direction: column;
+}
+
+
+#contact > h1 {
+    font-weight: bold;
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 2vw 0;
+ }
+
+ #map {
+    display: flex;
+    flex-direction: row;
+    padding: 0 4vw 4vw;
+ }
+
+ .mapimg img {
+    width: 80%;
+ }
+ .mapaccess h2 {
+    display: flex;
+    text-align: left;
+    width: 100%;
+    font-size: 1.8vw;
+    margin-bottom: 2vw;
+
+ }
+
+address > p,span {
+    font-style: normal;
+    margin: 0.5vw;
+}
+
+.mapaccess p span {
+    font-style: normal;
+    font-size: 1.2rem;
+    margin: 0.5vw;
+}
+
+
+.mapaccess ul
+{
+    width: 80%;
+    margin: 1.8vw 0 2vw;
+}
+
+.mapaccess ul li a
+{
+    display: flex;
+    width: 100%;
+    padding: 0.1vw 0.5vw;
+    font-size: 1.2rem;
+    text-decoration: underline;
+      
+}
+
+/* フッター */
+
+footer {
+    width: 100%;
+    height: 8vw;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    align-items: center;
+}
+
+/* sp390size */
+
+@media (max-width: 390px) 
+
+{
+    /* 479px以下用（スマートフォン用）の記述 */
+    #header { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2vw;
+    }
+
+        #header > h1 {
+            width: 70vw;
+            }
+            #header ul li {
+                font-size: 1.2rem;
+                font-family: 'Sawarabi Mincho', serif;
+                margin: 2vw;
+            }
+
+            .headerimg {
+                display: none;
+            }
+     .headerimg_sp {
+        display: block;        
+        width: 100vw;
+                background-color:#E2E2E2 ;
+            }
+ #aboutus
+ {
+    width: 100vw;
+    height: 390vw;
+    background-color: #E2E2E2;
+    align-items: center;
+    padding: 3vw 0vw 5vw;
+    margin-bottom: 210vw;
+ }
+ #aboutus > h1{
+    font-size: 1.5rem;
+ }
+    #aboutus .maintxt {
+        text-align: left;
+        font-size: 1.2rem;
+        padding: 0vw 3.2vw 5vw;
+    }
+
+    #aboutus .sp_less {display: none;}
+
+.menu01, .menu02, .menu03  {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.menu_img img {
+    width: 90vw;
+    height: auto;
+            margin: 0vw;
+}
+.menu_t{
+    display:flex;
+    width: 90vw;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+}   
+
+.menu_t h2 {
+    margin: 2vw 0vw;
+}
+
+.menu_t p {
+    margin: 2vw 0vw 5vw;
+}
+
+article {
+    margin-top: 20vw;
+    padding: 0vw 2vw;
+}
+
+
+.introduce {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0vw;
+    align-items: center;
+    width: 95vw;
+}
+.into_img {
+    height: auto;
+    margin: 0vw;   
+}
+
+.intotxt {
+    display:flex;
+    width: 98vw;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.intotxt h2 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+.intotxt p {
+    font-size: 1.01rem;
+    line-height: 9vw;
+}
+
+.instabox {
+    margin: 0%;
+}
+
+aside {
+    background-color: #E2E2E2;
+    margin: 6vw 0vw;
+    padding: 6vw;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    width: 100%;
+}
+
+.insta_img img {
+    justify-content: center;
+    width: 90%;
+}
+
+.checkit {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    align-items: center; 
+}
+
+.checkit h3 {
+    display: flex;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: darkorchid;
+}
+
+.checkit p {
+    text-align: left;
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkslategray;
+}
+
+#howtouse {
+      padding: 0 5vw 5vw;
+      margin-bottom: 8vw;
+}
+
+#howtouse > h1{
+    font-size: 1.5rem;
+ }
+
+ #howtouse > h2{
+ font-size: 1.1rem;
+ }
+
+.sp_br {
+    display: flex;
+}
+
+#howtouse table {
+    width: 100%;
+    height: 10vw;
+    background-color: antiquewhite;
+    border-collapse:  collapse;
+    margin: 2vw 0;
+    font-size: 1.1rem;
+    
+}
+#howtouse th
+{ width: 25vw;
+}
+
+#howtouse p {
+    font-size: 1rem;
+
+}
+
+#contact > h1{
+    font-size: 1.5rem;
+}
+
+#map {
+    display: flex;
+    flex-direction: column;
+    padding: 3vw;
+    margin-bottom: 2vw;
+    justify-content: center;
+     }
+
+     .mapimg img {
+        width: 100%;
+        align-items: center;
+     }
+
+     .mapaccess {
+        width: 100%;
+        padding: 0 2vw ;
+     }
+     .mapaccess h2 {
+        display: flex;
+        text-align: left;
+        width: 100%;
+        font-size: 1.3rem;
+        margin-bottom: 2vw;
+    
+     }
+     .mapaccess ul {
+        width: 80%;
+        margin: 2vw 0 6vw 7vw;
+}
+
+address > p, span {
+    margin: 0;
+}
+}
