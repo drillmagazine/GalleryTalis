@@ -1,0 +1,1029 @@
+body, head, title {
+    color: black;
+    font-family: 'Noto Serif JP', serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 0;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+.p_less {
+    display: none;
+}
+
+img {
+    max-width: 100%;
+    margin: 0%;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ヘッダー */
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 2% 0%;
+    margin: 0%;
+    vertical-align: baseline;
+}
+
+#header>h1 {
+    width: 20.83vw;
+}
+/* CSS Slide */
+.headerimg {
+    padding: 0VW;
+    background-color: #E2E2E2;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin: 0 auto;
+    }
+    .img-01, .img-02, .img-03{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+    .img-01{
+    background-image: url('../images/img-01.jpg');
+    animation: slide-animation-01 24s infinite;
+    }
+    .img-02{
+    background-image: url('../images/img-02.jpg');
+    animation: slide-animation-02 24s infinite;
+    }
+    .img-03{
+    background-image: url('../images/img-03.jpg');
+    animation: slide-animation-03 24s infinite;
+    }
+    @keyframes slide-animation-01 {
+    0% {opacity: 1; transform: scale(1.0);}
+    30% {opacity: 1;}
+    40% {opacity: 0; transform: scale(1.15);}
+    90% {opacity: 0}
+    100% {opacity: 1; transform: scale(1.0);}
+    }
+    @keyframes slide-animation-02 {
+    0% {opacity: 0;}
+    30% {opacity: 0; transform: scale(1.1);}
+    40% {opacity: 1;}
+    60% {opacity: 1;}
+    70% {opacity: 0; transform: scale(1.0);}
+    100% {opacity: 0;}
+    }
+    @keyframes slide-animation-03 {
+    0% {opacity: 0;}
+    60% {opacity: 0;  transform: scale(1.0);}
+    70% {opacity: 1;}
+    90% {opacity: 1;}
+    100% {opacity: 0; transform: scale(1.1);}
+    }
+/* CSS Slide end*/
+
+.headerimg_sp {
+    display: none;
+}
+
+
+#header ul {
+    display: flex;
+    align-items: center;
+}
+
+#header ul li {
+    font-size: 1.5rem;
+    font-family: 'Sawarabi Mincho', serif;
+    margin-left: 3vw;
+}
+
+
+
+/* ご案内 */
+#aboutus {
+
+    width: 100%;
+    height: 112vw;
+    background-color: #E2E2E2;
+    align-items: center;
+    padding: 3vw 0vw 2vw;
+}
+
+#aboutus>h1 {
+    font-weight: bold;
+    font-size: 2.2rem;
+    text-align: center;
+    background-color: #E2E2E2;
+    margin-bottom: 2vw;
+}
+
+#aboutus .maintxt {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Sawarabi Mincho', serif;
+    padding-bottom: 3.5vw;
+}
+
+.menu01, .menu02, .menu03 {
+    width: 100%;
+    height: 29.69vw;
+    padding: 0vw 4.17vw;
+    display: flex;
+
+}
+
+
+.wrap-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.menu_img img {
+    width: 36.46vw;
+    height: 29.69vw;
+    margin: 0vw 2.8vw;
+}
+
+.menu_t {
+    width: 44vw;
+    margin: auto;
+    padding: 0vw;
+}
+
+.intro {
+    width: 100%;
+    margin-top: 6vw;
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    text-align: center;
+    padding: 0 2.5vw;
+
+}
+
+.intotxt h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 5vw;
+}
+
+.intotxt {
+    text-align: left;
+    width: 36vw;
+    margin-right: 3vw;
+}
+
+.introduce {
+    width: 100%;
+    height: 29.69vw;
+    padding: 0vw 4.17vw;
+    display: flex;
+    margin-bottom: 10vw;
+}
+
+.instabox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+aside {
+    background-color: #E2E2E2;
+    margin:2vw 0vw 6vw;
+    padding: 6vw;
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70%;
+}
+
+.insta_img {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+
+.insta_img img {
+    justify-content: center;
+    margin-left: 5vw;
+    width: 60%;
+}
+
+.checkit {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5vw;
+}
+
+.checkit h3 {
+    text-align: left;
+    font-size: 2.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: darkorchid;
+}
+
+.checkit p {
+    text-align: left;
+    font-size: 1.7rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkslategray;
+}
+
+
+/* ご利用方法 */
+
+#howtouse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    background-color: #E2E2E2;
+    padding: 0 10vw 3vw;
+}
+
+
+#howtouse>h1 {
+    font-weight: bold;
+    font-size: 2.2rem;
+    text-align: center;
+    background-color: #E2E2E2;
+    margin: 2vw 0;
+}
+
+#howtouse>h2 {
+    display: flex;
+    text-align: left;
+    width: 100%;
+}
+
+
+#howtouse h2 p {
+    width: 60%;
+    display: flex;
+    text-align: left;
+}
+
+#howtouse table {
+    width: 100%;
+    height: 10vw;
+    background-color: antiquewhite;
+    border-collapse: collapse;
+    margin: 1vw 0 2vw;
+    font-size: 1.3rem;
+
+}
+
+#howtouse th, td {
+    border: solid 1px;
+    padding: 0 2vw;
+}
+
+#howtouse p {
+    display: flex;
+    text-align: left;
+    font-size: 1.2rem;
+    margin-bottom: 2vw;
+}
+
+.sp_br {
+    display: none;
+}
+
+/* お問い合わせ */
+
+#contact {
+    display: block;
+    flex-direction: column;
+}
+
+
+#contact>h1 {
+    font-weight: bold;
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 2vw 0;
+}
+
+#map {
+    display: flex;
+    flex-direction: row;
+    padding: 0 4vw 4vw;
+}
+
+
+.mapimg img {
+    width: 90%;
+}
+
+.mapaccess h2 {
+    display: flex;
+    text-align: left;
+    width: 100%;
+    font-size: 1.8vw;
+    margin-bottom: 2vw;
+
+}
+
+address>p, span {
+    font-style: normal;
+    margin: 0.5vw;
+}
+
+.mapaccess {
+    width: 100%;
+    padding: 0;
+}
+
+.mapaccess p span {
+    font-style: normal;
+    font-size: 1.2rem;
+    margin: 0.5vw;
+}
+
+
+.mapaccess ul {
+    width: 80%;
+    margin: 1.8vw 0 2vw;
+}
+
+.mapaccess ul li a {
+    display: flex;
+    width: 100%;
+    padding: 0.1vw 0.5vw;
+    font-size: 1.2rem;
+    text-decoration: underline;
+
+}
+
+/* フッター */
+
+footer {
+    width: 100%;
+    height: 8vw;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    align-items: center;
+}
+
+/* sp900size */
+
+@media (max-width: 950px) {
+    #aboutus {
+        height: 120vw;
+
+    }
+
+    .menu_t {
+        width: 50vw;
+    }
+
+    .menu_img img {
+        width: 30vw;
+        height: 26vw;
+
+    }
+
+    .intro {
+        margin: 0vw;
+    }
+
+    article {   margin: 0vw;}
+
+    .introduce {
+        height: 70vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10vw 0 0;
+    }
+
+    .intotxt {
+        text-align: left;
+        width: 100%;
+    }
+
+    .into_img img {
+        width: 50vw;
+    }
+    .checkit {
+        padding: 0};
+
+    .checkit h3 {
+        text-align: left;
+        font-size: 1.3rem;
+    }
+
+    .checkit p {
+        text-align: left;
+        font-size: 1.2rem;
+    }
+
+    aside {
+        padding: 3vw;
+        margin: 6vw 0vw;
+
+    }
+
+    .instabox {
+        margin: 0vw;
+    }
+    .insta_img img {
+        justify-content: center;
+        margin: 0;
+}
+}
+
+/* sp580size */
+
+@media (max-width: 580px) {
+
+    /* 580px以下用（スマートフォン用）の記述 */
+    #header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2vw;
+    }
+
+    #header>h1 {
+        width: 70vw;
+    }
+
+    #header ul li {
+        font-size: 1.2rem;
+        font-family: 'Sawarabi Mincho', serif;
+        margin: 2vw;
+    }
+
+    .headerimg {
+        display: none;
+    }
+
+          
+/* CSS Slide for sp 580 */
+.headerimg_sp {
+    display: flex;
+    padding: 0VW;
+    background-color: #E2E2E2;
+    position: relative;
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    margin: 0 auto;
+    }
+    .img-01sp, .img-02sp, .img-03sp {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+    .img-01sp {
+    background-image: url('../images/img-01_sp.png');
+    animation: slide-animation-01 24s infinite;
+    }
+    .img-02sp {
+    background-image: url('../images/img-02_sp.png');
+    animation: slide-animation-02 24s infinite;
+    }
+    .img-03sp {
+    background-image: url('../images/img-03_sp.png');
+    animation: slide-animation-03 24s infinite;
+    }
+    @keyframes slide-animation-01 {
+    0% {opacity: 1; transform: scale(1.0);}
+    30% {opacity: 1;}
+    40% {opacity: 0; transform: scale(1.15);}
+    90% {opacity: 0}
+    100% {opacity: 1; transform: scale(1.0);}
+    }
+    @keyframes slide-animation-02 {
+    0% {opacity: 0;}
+    30% {opacity: 0; transform: scale(1.1);}
+    40% {opacity: 1;}
+    60% {opacity: 1;}
+    70% {opacity: 0; transform: scale(1.0);}
+    100% {opacity: 0;}
+    }
+    @keyframes slide-animation-03 {
+    0% {opacity: 0;}
+    60% {opacity: 0;  transform: scale(1.0);}
+    70% {opacity: 1;}
+    90% {opacity: 1;}
+    100% {opacity: 0; transform: scale(1.1);}
+    }
+/* CSS Slide for sp end*/
+
+    .menu01, .menu02, .menu03 {
+        width: 100%;
+        height: 110vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu_t h2 {
+        font-size: 1.2rem;
+    }
+
+    #aboutus .sp_less {
+        display: none;
+    }
+
+    #aboutus {
+        width: 100vw;
+        height: 350vw;
+        background-color: #E2E2E2;
+    }
+
+    #aboutus>h1 {
+        font-size: 1.5rem;
+    }
+
+    #aboutus .maintxt {
+
+        text-align: left;
+        font-size: 1.2rem;
+        padding: 0vw 3.2vw 5vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu_img img {
+        margin-left: -5vw;
+    }
+
+    .menu_img img {
+        width: 90vw;
+        height: auto;
+        margin: 0vw;
+    }
+
+    .menu_t {
+        display: flex;
+        width: 90vw;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        margin: 5vw 0vw 18vw;
+        font-size: 1rem;
+
+    }
+
+    .menu_t h2 {
+        margin: 2vw 0vw;
+    }
+
+    .menu_t p {
+        margin: 2vw 0vw 5vw;
+    }
+
+    .introduce {
+        margin-top: 25vw;
+    }
+
+    .into_img img {
+        width: 70vw;
+    }
+
+    .intotxt h2 {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+      .intotxt p {
+    font-size: 1rem;
+    margin-bottom: 20vw;
+}
+    .wrap-reverse {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro {
+        margin: 0vw;
+    }
+
+    .insta_img {
+        padding: 0;
+        margin: 0;
+    }
+
+    .insta_img img {
+        justify-content: center;
+        /* margin-left: 5vw; */
+        width: 90%;
+    }
+
+    #howtouse>h1 {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    #howtouse {
+        padding: 0 5vw 3vw;
+    }
+
+    #contact>h1
+    {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    #map {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .mapimg {
+        margin: 0%;
+       justify-content: center;
+    }
+    .mapimg img {
+        width: 100%;
+    }
+
+ .mapaccess {
+    padding: 0 5%;
+ }
+ .mapaccess h2 {
+    display: flex;
+    text-align: left;
+    width: 100%;
+    font-size: 4.5vw;
+    margin-bottom: 2vw;
+}
+footer {
+    width: 100%;
+    height: 18vw;
+}
+
+}
+ /* sp500size */
+@media (max-width: 500px) {
+
+    /* 500px以下用（スマートフォン用）の記述 */
+
+    .intro {
+        margin: 25vw 0vw 0vw;
+    }
+    .menu01, .menu02, .menu03 {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #E2E2E2;
+}
+}
+    /* sp390size */
+
+    @media (max-width: 395px) {
+
+        /* 479px以下用（スマートフォン用）の記述 */
+        #header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2vw;
+        }
+
+        #header>h1 {
+            width: 70vw;
+        }
+
+        #header ul li {
+            font-size: 1.2rem;
+            font-family: 'Sawarabi Mincho', serif;
+            margin: 2vw;
+        }
+
+        .headerimg {
+            display: none;
+        }
+
+            
+/* CSS Slide for sp 390 */
+.headerimg_sp {
+    display: flex;
+    padding: 0VW;
+    background-color: #E2E2E2;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    margin: 0 auto;
+    }
+    .img-01sp, .img-02sp, .img-03sp {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+    .img-01sp {
+    background-image: url('../images/img-01_sp.png');
+    animation: slide-animation-01 24s infinite;
+    }
+    .img-02sp {
+    background-image: url('../images/img-02_sp.png');
+    animation: slide-animation-02 24s infinite;
+    }
+    .img-03sp {
+    background-image: url('../images/img-03_sp.png');
+    animation: slide-animation-03 24s infinite;
+    }
+    @keyframes slide-animation-01 {
+    0% {opacity: 1; transform: scale(1.0);}
+    30% {opacity: 1;}
+    40% {opacity: 0; transform: scale(1.15);}
+    90% {opacity: 0}
+    100% {opacity: 1; transform: scale(1.0);}
+    }
+    @keyframes slide-animation-02 {
+    0% {opacity: 0;}
+    30% {opacity: 0; transform: scale(1.1);}
+    40% {opacity: 1;}
+    60% {opacity: 1;}
+    70% {opacity: 0; transform: scale(1.0);}
+    100% {opacity: 0;}
+    }
+    @keyframes slide-animation-03 {
+    0% {opacity: 0;}
+    60% {opacity: 0;  transform: scale(1.0);}
+    70% {opacity: 1;}
+    90% {opacity: 1;}
+    100% {opacity: 0; transform: scale(1.1);}
+    }
+/* CSS Slide for sp end*/
+           
+
+
+        #aboutus {
+            width: 100vw;
+            height: 390vw;
+            background-color: #E2E2E2;
+            align-items: center;
+            padding: 3vw 0vw 5vw;
+            margin-bottom: 80vw;
+        }
+
+        #aboutus>h1 {
+            font-size: 1.5rem;
+        }
+
+        #aboutus .maintxt {
+            text-align: left;
+            font-size: 1.2rem;
+            padding: 0vw 3.2vw 5vw;
+            margin-bottom: 10vw;
+        }
+
+        #aboutus .sp_less {
+            display: none;
+        }
+
+        .menu01, .menu02, .menu03 {
+            width: 100vw;
+            height: auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu_img img {
+            width: 90vw;
+            height: auto;
+            margin: 0vw;
+        }
+
+        .menu_t {
+            display: flex;
+            width: 90vw;
+            height: auto;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .menu_t h2 {
+            margin: 2vw 0vw;
+        }
+
+        .menu_t p {
+            margin: 2vw 0vw 5vw;
+        }
+
+        article {
+            margin-top: 5vw;
+            padding: 0vw 2vw;
+        }
+        .intro {
+            margin: 35vw 0vw 0vw;
+        }
+
+        .introduce {
+            height: 125vw;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .into_img {
+            height: auto;
+            margin: 0vw;
+        }
+
+        .intotxt {
+            display: block;
+            width: 88vw;
+            /* height: auto; */
+            flex-direction: column;
+            padding-left: 2vw;
+        }
+
+        .intotxt h2 {
+            font-size: 1.5rem;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .intotxt p {
+            font-size: 1.2rem;
+            line-height: 9vw;
+            padding: 5vw 5vw 22vw;
+
+                  }
+
+        .instabox {
+            margin: 0%;
+            height: 140vw;
+        }
+
+        aside {
+            background-color: #E2E2E2;
+            margin: 0vw;
+            padding: 0vw;
+            width: 70vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .insta_img img {
+            justify-content: center;
+            width: 90%;
+        }
+
+        .checkit {
+            padding: 5vw;
+        }
+
+        .checkit h3 {
+            display: flex;
+            text-align: center;
+            font-size: 1.3rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: darkorchid;
+            margin-bottom: 2vw;
+        }
+
+        .checkit p {
+            text-align: left;
+            font-size: 1.2rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: darkslategray;
+        }
+
+        #howtouse {
+            padding: 0 5vw 5vw;
+            margin-bottom: 8vw;
+        }
+
+        #howtouse>h1 {
+            font-size: 1.5rem;
+        }
+
+        #howtouse>h2 {
+            font-size: 1.1rem;
+        }
+
+        .sp_br {
+            display: flex;
+        }
+
+        #howtouse table {
+            width: 100%;
+            height: 10vw;
+            background-color: antiquewhite;
+            border-collapse: collapse;
+            margin: 2vw 0;
+            font-size: 1.1rem;
+
+        }
+
+        #howtouse th {
+            width: 25vw;
+        }
+
+        #howtouse p {
+            font-size: 1rem;
+
+        }
+
+        #contact>h1 {
+            font-size: 1.5rem;
+        }
+
+        #map {
+            display: flex;
+            flex-direction: column;
+            padding: 3vw;
+            margin-bottom: 2vw;
+            justify-content: center;
+        }
+
+        .mapimg img {
+            width: 100%;
+            align-items: center;
+        }
+
+        .mapaccess {
+            width: 100%;
+            padding: 0 2vw;
+        }
+
+        .mapaccess h2 {
+            display: flex;
+            text-align: left;
+            width: 100%;
+            font-size: 1.3rem;
+            margin-bottom: 2vw;
+
+        }
+        .mapaccess p{
+            font-size: 1rem;
+        }
+
+        .mapaccess ul {
+            width: 80%;
+            margin: 2vw 0 6vw 7vw;
+        }
+
+        address>p, span {
+            margin: 0;
+        }
+
+    } 
+    
+    /* sp375size */
+    @media (max-width: 375px) {
+    
+        /* 375px以下用（スマートフォン用）の記述 */
+    
+        .intro {
+            margin: 25vw 0vw 0vw;
+        }
+        .menu01, .menu02, .menu03 {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            background-color: #E2E2E2;
+    }
+    }
+        
